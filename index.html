@@ -18,13 +18,28 @@
                     id="searchInput"
                     placeholder="Search anything here..."
                     required>
-                <button type="submit" class="search-btn" id="searchBtn">Search</button>
+                <button class="search-btn" id="searchBtn">Search</button>
             </div>
         </form>
 
         <button class="show-more-btn" id="showMoreBtn">Show more</button>
 
         <button class="show-more-btn" id="showMoreBtn" style="display: none;">Show more</button>
+
+        <div class="results-container" id="resultsContainer">
+            <div class="loading" id="loadingState">
+                <div class="spinner"></div>
+                <div class="loading-text">Searching images...</div>
+            </div>
+            
+            <div class="empty-state" id="emptyState">
+                Result
+            </div>
+            
+            <div class="results-grid" id="resultsGrid"></div>
+        </div>
+
+
     <script src="main.js"></script>
     
 </body>
